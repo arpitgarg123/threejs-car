@@ -26,7 +26,7 @@ let model = null;
 // loaders
 const gltfLoader = new GLTFLoader();
 gltfLoader.load(
-  "model/free_porsche_911_carrera_4s/scene.gltf",
+  "./model/free_porsche_911_carrera_4s/scene.gltf",
   (gltf) => {
     model = gltf.scene;
     scene.add(model);
