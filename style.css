@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+*{
+margin : 0;
+padding : 0;
+box-sizing : border-box;
+}
+html,body {
+height: 100%;
+width: 100%;
+font-family: "Quicksand",sans-serif;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    background-image: radial-gradient(#8b8b8b,#1d252e);
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    color: white;
+}
+#myCanvas{
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+     position: absolute;
+    top: 0;
+    left: 0;
+    cursor: grab;
+}
+.contentSpecial{
+    /* color: red; */
+    opacity: 0;
+}
+
+.contentOne{
+    width: 25%;
+text-align: start;
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    text-align: center;
+    text-align: start;
+    pointer-events: none;
+}
+.contentOne h1{
+    font-size: 4.8vw;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1;
+    margin-bottom: 2vw;
+}
+.contentTwo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    text-align: center;
+    gap: 5vw;
+    pointer-events: none;
+}
+.contentTwo h1{
+    font-size: 4vw;
+}
+.contentTwo h2{
+    font-size: 1.3vw;
+    opacity: 0.5;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.more{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 30px;
+    font-size: 1.1vw;
+    padding: 1vw 2vw;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+@media screen and (max-width: 768px) {
+    .contentOne{
+        width: 100%;
+    text-align: center;
+        position: relative;
+        top: unset;
+        right: unset;
+        bottom: 0;
+        pointer-events: none;
+        padding: 2vw 3vw;
+    }
+    .contentTwo{
+        bottom: 15%;
+        gap: 7vw;
+    }
+    .contentTwo h1{
+        font-size: 5vw;
+    }
+    .contentTwo h2{
+        font-size: 2vw;
+        opacity: 0.5;
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+}
